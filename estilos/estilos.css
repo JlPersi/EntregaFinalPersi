@@ -63,7 +63,7 @@ span:hover{
 }
 
 .cright{
-    background-image: url(/imagenes/30cf867b-1c01-4c14-a9ac-da0166a3fb70.jpg);
+    background-image: url(../imagenes/30cf867b-1c01-4c14-a9ac-da0166a3fb70.jpg);
     background-position: center;
     background-size: cover;
     width: 50%;
@@ -200,37 +200,37 @@ footer{
 }
 
 .item1{
-    background-image: url(/imagenes/galeria1.jpg);
+    background-image: url(../imagenes/galeria1.jpg);
     /* grid-column: 1/2;
     grid-row: 1/2; */
 }
 
 .item2{
-    background-image: url(/imagenes/galeria2.jpg);
+    background-image: url(../imagenes/galeria2.jpg);
     /* grid-column: 2/3;
     grid-row: 1/2; */
 }
 
 .item3{
-    background-image: url(/imagenes/galeria3.jpeg);
+    background-image: url(../imagenes/galeria3.jpeg);
     /* grid-column: 3/5;
     grid-row: 1/3; */
 }
 
 .item4{
-    background-image: url(/imagenes/galeria4.jpeg);
+    background-image: url(../imagenes/galeria4.jpeg);
     /* grid-column: 1/3;
     grid-row: 2/3; */
 }
 
 .item5{
-    background-image: url(/imagenes/galeria5.jpg);
+    background-image: url(../imagenes/galeria5.jpg);
     /* grid-column: 1/3;
     grid-row: 3/4; */
 }
 
 .item6{
-    background-image: url(/imagenes/galeria6.jpg);
+    background-image: url(../imagenes/galeria6.jpg);
     /* grid-column: 3/5;
     grid-row: 3/4; */
 }
