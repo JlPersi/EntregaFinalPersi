@@ -63,7 +63,7 @@ span:hover{
 }
 
 .cright{
-    background-image: url(../imagenes/30cf867b-1c01-4c14-a9ac-da0166a3fb70.jpg);
+    background-image: url(../imagenes/remera1.jpg);
     background-position: center;
     background-size: cover;
     width: 50%;
@@ -146,29 +146,28 @@ footer{
     padding-top: 130px;
 }
 
-/* Ubicacion */
-
-.mainubicacion{
-    width: 100%;
-    height: 760px;
-    background-color:#e5989b;
+.map-responsive {
+    overflow:hidden;
+    padding-bottom: 760px;
+    position:relative;
 }
-
-.mainubicacion .mapaclub{
-    width: auto;
-    height: auto;
-    padding: 50px 50px;
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
 }
 
 .pmain{
-   width: 50%;
-   background-color: #370617;
-   color: white;
-   font-size: 50px;
-   justify-content: center;
-   text-align: center;
-   padding: 50px 50px;
-   margin-top: 20px;
+    width: 50%;
+    background-color: #370617;
+    color: white;
+    font-size: 50px;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 50px;
+    text-shadow: 1px 1px 2px pink;
 }
 
 /* Galeria */
@@ -271,10 +270,11 @@ footer{
     .cleft{
         height: 100%;
         width: 50%;
-        padding: 0px;
+        padding: 13px;
+        font-size: 25px;
     }
     .contenedores1.cleft p{
-        font-size: 20px;
+        font-size: 50px;
         margin: 0px;
         padding: 0px;
         text-align: center; 
@@ -294,9 +294,28 @@ footer{
         padding: 0px;
         font-size: 20px;
     }
+.mainnosotros h1{
+        font-size: 50px;
+    }
+    .mainnosotros p{
+        text-align: center;
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+    .maincontacto h1{
+        font-size: 40px;
+    } 
+    .map-responsive{
+        padding-bottom: 300px;
+    }
+    .pmain{
+        height: 400px;
+        font-size: 16px;
+    }
 }
 
-@media only screen and (min-width:532px) and (max-width:768px){
+
+@media only screen and (min-width:533px) and (max-width:768px){
     span{
         font-size: 30px;
         color: white;
@@ -320,10 +339,10 @@ footer{
     .cleft{
         height: 100%;
         width: 50%;
-        padding: 0px;
+        padding: 15 px;
     }
     .contenedores1 .cleft p{
-        font-size: 20px;
+        font-size: 25px;
         margin: 0px;
         padding: 0px;
         text-align: center; 
@@ -343,8 +362,35 @@ footer{
         padding: 0px;
         font-size: 35px;
     }
-    
+    .mainnosotros h1{
+        font-size: 70px;
+    }
+    .mainnosotros p{
+        text-align: center;
+        padding-top: 150px;
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+    .map-responsive{
+        padding-bottom: 300px;
+    }
+    .pmain{
+        font-size: 20px;
+    }
 }
+
+@media only screen and (min-width:588px) and (max-width:738px){
+    .pmain{
+        font-size: 22px;
+    }
+}
+
+@media only screen and (min-width:739px) and (max-width:768px){
+    .pmain{
+        font-size: 26px;
+    }
+}
+
 
 @media only screen and (min-width:768px) and (max-width:990px){
     span{
@@ -352,12 +398,18 @@ footer{
         color: white;
         padding: 0px
     }
+
+    .cleft p{
+        font-size: 25px;
+    }
+
     .navbar-collapse{
         background-color: black;
         width: 100%;
         display: flex;
         justify-content: center;
     }
+
     .carousel1 ul{
         z-index: 1;
     }
@@ -382,6 +434,15 @@ footer{
         padding: 0px;
         font-size: 40px;
     }
+.mainnosotros p{
+        font-size: 35px;
+        text-align: center;
+        padding-top: 10px;
+    }
+    .pmain{
+        font-size: 26px;
+        padding-top: 150px;
+    }
 }
 
 @media only screen and (min-width:990px) and (max-width:2440px){
@@ -390,6 +451,12 @@ footer{
         color: white;
         padding: 0px
     }
+
+    .cleft p{
+        font-size: 30px;
+        padding-top: 50px;
+    }
+
     .nav-item{
         padding: 0px;
         margin: 0px;
@@ -424,7 +491,15 @@ footer{
     .item6{
         grid-column: 3/5;
     }
+.mainnosotros p{
+        font-size: 40px;
+        text-align: center;
+        padding-top: 30px;
+    }
+    .pmain{
+        font-size: 30px;
+        padding-top: 200px;
+    }
 }
-
 
 
