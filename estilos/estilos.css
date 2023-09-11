@@ -74,6 +74,9 @@ footer {
 footer .redes {
   padding: 3px;
 }
+footer a {
+  color: white !important;
+}
 
 /* Nosotros */
 .mainnosotros {
@@ -89,10 +92,23 @@ footer .redes {
   display: flex;
   justify-content: center;
   color: white;
+  text-shadow: 2px 2px 5px black;
   padding: 10px;
   background-color: #370617;
+  animation-name: h1nosotros;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
+@keyframes h1nosotros {
+  from {
+    opacity: 50%;
+  }
+  to {
+    opacity: 1;
+  }
+}
 /* CONTACTOS */
 .maincontacto {
   height: 765px;
@@ -106,22 +122,34 @@ footer .redes {
   display: flex;
   justify-content: center;
   padding-top: 50px;
+  animation-name: wpp;
+  animation-duration: 3s;
+  animation-iteration-count: initial;
 }
-.maincontacto .iconphone {
+.maincontacto .iconwpp a {
+  color: black !important;
+}
+.maincontacto .phone {
   font-size: 70px;
   text-transform: uppercase;
   color: black;
   display: flex;
   justify-content: center;
   padding-top: 110px;
+  animation-name: phone;
+  animation-duration: 3s;
+  animation-iteration-count: initial;
 }
-.maincontacto .iconemail {
+.maincontacto .email {
   font-size: 70px;
   text-transform: uppercase;
   color: black;
   display: flex;
   justify-content: center;
   padding-top: 130px;
+  animation-name: email;
+  animation-duration: 3s;
+  animation-iteration-count: initial;
 }
 .maincontacto h1 {
   font-size: 75px;
@@ -130,9 +158,35 @@ footer .redes {
   color: white;
   padding: 10px;
   background-color: #370617;
-  animation-duration: 2s;
+  animation-name: h1contacto;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
+@keyframes h1contacto {
+  from {
+    opacity: 50%;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes email {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes wpp {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes phone {
+  100% {
+    transform: rotate(360deg);
+  }
+}
 /*Ubicacion*/
 .map-responsive {
   overflow: hidden;
@@ -182,6 +236,8 @@ footer .redes {
   padding: 20px;
   text-transform: uppercase;
   font-size: 40px;
+  text-transform: uppercase;
+  color: black;
 }
 
 .item1 {
@@ -276,6 +332,9 @@ footer .redes {
   }
   .maincontacto h1 {
     font-size: 40px;
+  }
+  .maincontacto .email h2 {
+    font-size: 20px;
   }
   .map-responsive {
     padding-bottom: 300px;

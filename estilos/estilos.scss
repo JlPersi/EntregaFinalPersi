@@ -77,6 +77,9 @@ footer{
         .redes{
         padding: 3px;
         }
+        a{
+        color: white !important;
+        }
 }
 
 /* Nosotros */
@@ -92,13 +95,30 @@ footer{
             display: flex;
             justify-content: center;
             color: white;
+            text-shadow: 2px 2px 5px black;
             padding: 10px;
             background-color: #370617;
+            animation-name: h1nosotros;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
         }
+}
+@keyframes h1nosotros{
+    from{
+        opacity: 50%    ;
+    }
+    to{
+        opacity: 1;
+    }
+
 }
 
 /* CONTACTOS */
 .maincontacto{
+    height: 765px;
+    width: 100%;
+    background-color: #e5989b;    
     .iconwpp{
     font-size: 75px;
     text-transform: uppercase;
@@ -106,26 +126,35 @@ footer{
     display: flex;
     justify-content: center;
     padding-top: 50px;
+    animation-name: wpp;
+    animation-duration: 3s;
+    animation-iteration-count: initial;
+        a{
+            color: black !important;
+        }
     }
-    .iconphone{
+    .phone{
     font-size: 70px;
     text-transform: uppercase;
     color: black;
     display: flex;
     justify-content: center;
     padding-top: 110px;
+    animation-name: phone;
+    animation-duration: 3s;
+    animation-iteration-count: initial; 
     }
-    .iconemail{
+    .email{
     font-size: 70px;
     text-transform: uppercase;
     color: black;
     display: flex;
     justify-content: center;
     padding-top: 130px;
+    animation-name: email;
+    animation-duration: 3s;
+    animation-iteration-count: initial;
     }
-    height: 765px;
-    width: 100%;
-    background-color: #e5989b;
     h1{
     font-size: 75px;
     display: flex;
@@ -133,7 +162,34 @@ footer{
     color: white;
     padding: 10px;
     background-color: #370617;
-    animation-duration: 2s;
+    animation-name: h1contacto;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    }
+}
+@keyframes h1contacto{
+    from{
+        opacity: 50%    ;
+        }
+    to{
+    opacity: 1;
+    }
+}
+
+@keyframes email{
+    100%{
+    transform: rotate(360deg);
+    }
+}
+@keyframes wpp{
+    100%{
+    transform: rotate(360deg);
+    }
+}
+@keyframes phone{
+    100%{
+    transform: rotate(360deg);
     }
 }
 
@@ -189,6 +245,8 @@ footer{
     padding: 20px;
     text-transform: uppercase;
     font-size: 40px;
+    text-transform: uppercase;
+    color: black;
     }
 }
 
@@ -239,8 +297,6 @@ footer{
     height: 40px;
     width:100%;
     padding: 0px;
-}
-.h2main {
     h2{
     font-size: 14px;
     margin: 0px;
@@ -297,7 +353,12 @@ footer{
     h1{
         font-size: 40px; 
     }
-} 
+    .email{
+        h2{
+            font-size: 20px;
+        }
+    }
+}
 .map-responsive{
     padding-bottom: 300px;
 }
@@ -306,7 +367,6 @@ footer{
     font-size: 16px;
 }
 }
-
 
 @media only screen and (min-width:533px) and (max-width:768px){
 span{
